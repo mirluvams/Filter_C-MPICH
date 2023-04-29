@@ -1,6 +1,8 @@
-# Applying a Sepia Filter using C and MPICH
+# Applying a Sepia Filter using C, MPICH, Glade, Gtk and Python.
 
-This project is about applying a sepia filter to a given image using C and MPICH. MPICH is an implementation of the MPI (Message Passing Interface) standard for distributed memory computing.
+This project is divided into two different parts, the first part is all about applying a sepia filter to a given image using C and MPICH. MPICH is an implementation of the MPI (Message Passing Interface) standard for distributed memory computing.
+
+The second part corresponds to create a GUI using Glade which is a graphical user interface builder for Gtk. Using the Gtk library, you can load and manipulate the interface from your Python code.
 
 ## Requirements
 
@@ -9,22 +11,26 @@ To run this program, you need to have:
 - A C compiler (such as mpicc)
 - MPICH
 - An input image file in png format
+- Glade
+- Python
+- Python PyGObject package
 
 ## Usage
 
 First, you need to compile the program using the following command:
 `mpicc *.c -lz -lm -o example`
 
-
-
 Then, you execute the program using the following command:
 `mpiexec -n 8 ./example "yule.png" "yule.out.png"`
 
 Where `<n>` is the number of processes to use. For example, in this case we're using 8 processes; `"yule.png"` is the input image path and `"yule.out.png"` is the output image path.
 
+After doing that, you need to run the GUI using the following command:
+`python3 readpng.py` which includes the function `builder.add_from_file("readpng.glade")` that parses the glade file containing a UI definition (refers to the layout and properties of user interface elements in a graphical user interface (GUI) application. This includes the positioning and sizing of widgets such as buttons, labels, and text boxes, as well as their visual appearance, such as font and color), and merges it with the current contents of builder.
+
 ## How it works
 
-The program works as follows:
+For the first part, the program works as follows:
 
 1. The master process reads the input image file and divides it into equal-sized chunks of rows.
 2. Each worker process applies the sepia filter to its chunk.
@@ -32,6 +38,9 @@ The program works as follows:
 4. The master process merges the filtered chunks and saves the result to the output image file.
 
 The sepia filter algorithm used is saved in the `example.c` file.
+
+For the second part, the program does:
+1. 
 
 ## Limitations
 
