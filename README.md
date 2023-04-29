@@ -65,8 +65,7 @@ Here we have the input image on the left and the output image on the right:
 
 This is what the GUI looks like after running the program, before and after applying the filter:
 
-<img src="/gui.png" alt="GUI" width="200" height="300"/>
-<img src="/gui1.png" alt="GUI" width="200" height="300"/>
+<img src="/gui.png" alt="GUI" width="200" height="300"/> <img src="/gui1.png" alt="GUI" width="200" height="300"/>
 
 
 
