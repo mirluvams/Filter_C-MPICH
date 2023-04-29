@@ -44,13 +44,13 @@ The sepia filter algorithm used is saved in the `example.c` file.
 For the second part, the program does:
 1. Create a GUI using Glade.
 2. Create Python code using Gtk library that will do the following:
-  - It imports the necessary modules: gi, Gtk, os, subprocess, and time.
+  - It imports the necessary modules: gi, Gtk, subprocess.
   - It defines a global variable "file_path" to store the path of the file that is selected by the user.
   - It defines a class "Handler" that contains several methods to handle various events such as closing the window, opening a file, and applying an MPI filter.
-It creates an instance of Gtk.Builder() and loads the UI definition from the "readpng.glade" file.
-It connects the signals in the UI definition to the corresponding methods in the Handler class.
-It retrieves several objects from the UI definition such as the main window, an image widget, and a dialog window for selecting the number of processors to use for the MPI filter.
-It shows the main window and starts the Gtk main loop.
+  - It creates an instance of Gtk.Builder() and loads the UI definition from the `"readpng.glade"` file.
+  - It connects the signals in the UI definition to the corresponding methods in the Handler class.
+  - It retrieves several objects from the UI definition such as the main window, an image widget, and a dialog window for selecting the number of processors to use for the MPI filter.
+  - It shows the main window and starts the Gtk main loop.
 
 ## Limitations
 
@@ -63,6 +63,8 @@ Here we have the input image on the left and the output image on the right:
 
 <img src="/yule.png" alt="Input image" width="200" height="200"/> <img src="/out.png" alt="Output image" width="200" height="200"/>
 
+This is what the GUI looks like after running:
+<img src="/gui.png" alt="GUI" width="200" height="300"/>
 
 
 ## Credits
