@@ -7,7 +7,7 @@ This project is about applying a sepia filter to a given image using C and MPICH
 To run this program, you need to have:
 
 - A C compiler (such as mpicc)
-- MPICH (version 3.4 or later)
+- MPICH
 - An input image file in png format
 
 ## Usage
