@@ -68,7 +68,7 @@ This is what the GUI looks like after running the program, before and after appl
 <img src="/gui.png" alt="GUI" width="200" height="300"/> <img src="/gui1.png" alt="GUI" width="200" height="300"/>
 
 ## Output (Example)
-
+```
 Opening file at :yule.pngwidth: 739
 height: 860
 bit depth: 8
@@ -89,7 +89,7 @@ Process 6 started at 1906608 and ended before 2224376. (Range 317768)
 Process 7 started at 2224376 and ended before 2542160. (Range 317784)
 
 Successful quadratic inversion.
-
+```
 
 ## Credits
 
