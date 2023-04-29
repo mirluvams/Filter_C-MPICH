@@ -15,10 +15,12 @@ To run this program, you need to have:
 First, you need to compile the program using the following command:
 `mpicc *.c -lz -lm -o example`
 
-Then, you execute the program using the following command:
-`mpiexec -n 8 ./example`
 
-Where `<n>` is the number of processes to use. For example, in this case we're using 8 processes.
+
+Then, you execute the program using the following command:
+`mpiexec -n 8 ./example "yule.png" "yule.out.png"`
+
+Where `<n>` is the number of processes to use. For example, in this case we're using 8 processes; `"yule.png"` is the input image path and `"yule.out.png"` is the output image path.
 
 ## How it works
 
