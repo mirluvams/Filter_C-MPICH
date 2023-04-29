@@ -37,7 +37,7 @@ The sepia filter algorithm used is saved in the `example.c` file.
 - The output image file will also be in png format.
 
 ## Example
-| Input image | & | Output image |
+|    Input image     |     |     Output image     |
 
 <img src="/yule.png" alt="Input image" width="200" height="200"/> <img src="/out.png" alt="Output image" width="200" height="200"/>
 
