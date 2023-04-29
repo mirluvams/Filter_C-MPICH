@@ -28,7 +28,7 @@ Then, you execute the program using the following command:
 Where `<n>` is the number of processes to use. For example, in this case we're using 8 processes; `"yule.png"` is the input image path and `"yule.out.png"` is the output image path.
 
 After doing that, you need to run the GUI using the following command:
-`python3 readpng.py` which includes the function `builder.add_from_file("readpng.glade")` that parses the glade file containing a UI definition (refers to the layout and properties of user interface elements in a graphical user interface (GUI) application. This includes the positioning and sizing of widgets such as buttons, labels, and text boxes, as well as their visual appearance, such as font and color), and merges it with the current contents of builder.
+`python3 readpng.py`
 
 ## How it works
 
@@ -42,7 +42,15 @@ For the first part, the program works as follows:
 The sepia filter algorithm used is saved in the `example.c` file.
 
 For the second part, the program does:
-1. 
+1. Create a GUI using Glade.
+2. Create Python code using Gtk library that will do the following:
+  - It imports the necessary modules: gi, Gtk, os, subprocess, and time.
+  - It defines a global variable "file_path" to store the path of the file that is selected by the user.
+  - It defines a class "Handler" that contains several methods to handle various events such as closing the window, opening a file, and applying an MPI filter.
+It creates an instance of Gtk.Builder() and loads the UI definition from the "readpng.glade" file.
+It connects the signals in the UI definition to the corresponding methods in the Handler class.
+It retrieves several objects from the UI definition such as the main window, an image widget, and a dialog window for selecting the number of processors to use for the MPI filter.
+It shows the main window and starts the Gtk main loop.
 
 ## Limitations
 
