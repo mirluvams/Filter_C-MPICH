@@ -67,8 +67,8 @@ This is what the GUI looks like after running the program, before and after appl
 
 <img src="/gui.png" alt="GUI" width="200" height="300"/> <img src="/gui1.png" alt="GUI" width="200" height="300"/>
 
-## Output 
-'''
+## Output (Example)
+
 Opening file at :yule.pngwidth: 739
 height: 860
 bit depth: 8
@@ -80,30 +80,15 @@ palette entries: 0
 
 Image size: 2542160
 Process 1 started at 317768 and ended before 635536. (Range 317768)
-
-Image size: 2542160
 Process 5 started at 1588840 and ended before 1906608. (Range 317768)
-
-Image size: 2542160
 Process 4 started at 1271072 and ended before 1588840. (Range 317768)
 Process 0 started at 0 and ended before 317768. (Range 317768)
-Successful quadratic inversion.
-
 Process 2 started at 635536 and ended before 953304. (Range 317768)
 Process 3 started at 953304 and ended before 1271072. (Range 317768)
 Process 6 started at 1906608 and ended before 2224376. (Range 317768)
 Process 7 started at 2224376 and ended before 2542160. (Range 317784)
 
 Successful quadratic inversion.
-Successful quadratic inversion.
-Successful quadratic inversion.
-Successful quadratic inversion.
-Successful quadratic inversion.
-Successful quadratic inversion.
-Successful quadratic inversion.
-'''
-
-
 
 
 ## Credits
