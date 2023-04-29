@@ -1,8 +1,8 @@
 # Applying a Sepia Filter using C, MPICH, Glade, Gtk and Python.
 
-This project is divided into two different parts, the first part is all about applying a sepia filter to a given image using C and MPICH. MPICH is an implementation of the MPI (Message Passing Interface) standard for distributed memory computing.
+This project is divided into two parts. The first part involves applying a sepia filter to an image using C and MPICH, which is an implementation of the MPI (Message Passing Interface) standard for distributed memory computing.
 
-The second part corresponds to create a GUI using Glade which is a graphical user interface builder for Gtk. Using the Gtk library, you can load and manipulate the interface from your Python code.
+The second part involves creating a GUI using Glade, a graphical user interface builder for Gtk. We use the Gtk library to load and manipulate the interface from the Python code.
 
 ## Requirements
 
