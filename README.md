@@ -36,6 +36,13 @@ The sepia filter algorithm used is saved in the `example.c` file.
 - The input image file must be in png format.
 - The output image file will also be in png format.
 
+## Example of use:
+
+- Input image: ![input image](/yule.png)
+
+
+- Output image:
+
 ## Credits
 
 This program was created by [Miriam Valdez] for the [High Performance Computing Course] at [ENES, Morelia] taught by [Dr. Victor De la Luz].
