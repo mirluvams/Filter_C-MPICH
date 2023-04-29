@@ -39,6 +39,7 @@ The sepia filter algorithm used is saved in the `example.c` file.
 ## Example of use:
 
 - Input image: ![input image](/yule.png)
+<img src="/yule.png" alt="Input image" width="200" height="200"/>
 
 
 - Output image:
